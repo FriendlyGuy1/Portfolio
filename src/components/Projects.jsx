@@ -5,11 +5,7 @@ const projects = [
     id: 1,
     title: "Image Search",
     description: "A simple image searcher using a keyword",
-    technologies: [
-      "JavaScript",
-      "HTML",
-      "CSS",
-    ],
+    technologies: ["JavaScript", "HTML", "CSS"],
     imageUrl: "https://i.ibb.co/HTZ1PmN/Photo-Search.png",
     liveUrl: "https://photo-search-gold.vercel.app/",
     githubUrl: "https://github.com/FriendlyGuy1/Photo_Search",
@@ -17,13 +13,9 @@ const projects = [
   {
     id: 2,
     title: "Contact page",
-    description: "A contact sumbit form which saves the data in the firebase and prints out all the submitted messages",
-    technologies: [
-      "JavaScript",
-      "React",
-      "CSS",
-      "Firebase",
-    ],
+    description:
+      "A contact sumbit form which saves the data in the firebase and prints out all the submitted messages",
+    technologies: ["JavaScript", "React", "CSS", "Firebase"],
     imageUrl: "https://placehold.co/420x300",
     liveUrl: "https://react-firebase-woad.vercel.app/",
     githubUrl: "https://github.com/FriendlyGuy1/React_Firebase",
@@ -31,7 +23,8 @@ const projects = [
   {
     id: 3,
     title: "Event Sharing Page",
-    description: "Website used to share or to find yourself some events to attend",
+    description:
+      "Website used to share or to find yourself some events to attend",
     technologies: [
       "JavaScript",
       "React",
@@ -39,7 +32,7 @@ const projects = [
       "MongoDB",
       "Express.js",
       "Node.js",
-      "Vite"
+      "Vite",
     ],
     imageUrl: "https://i.ibb.co/KGg9PcG/Screenshot-13.png",
     liveUrl: "https://eventpage-chp7.onrender.com/",
@@ -49,15 +42,18 @@ const projects = [
     id: 4,
     title: "AD posting website",
     description: "Website where you can post and check peoples ad's",
-    technologies: [
-      "JavaScript",
-      "HTML",
-      "CSS",
-      "Firebase",
-    ],
+    technologies: ["JavaScript", "HTML", "CSS", "Firebase"],
     imageUrl: "https://placehold.co/420x300",
     liveUrl: "https://adpage-lake.vercel.app/",
     githubUrl: "https://github.com/FriendlyGuy1/FireBase",
+  },
+  {
+    id: 5,
+    title: "This Portfolio",
+    description: "Personal Portfolio",
+    technologies: ["React", "CSS", "Vite"],
+    imageUrl: "https://placehold.co/420x300",
+    githubUrl: "https://github.com/FriendlyGuy1/Portfolio",
   },
 ];
 
@@ -82,13 +78,15 @@ const Projects = () => {
                   </ul>
                 </div>
                 <div className="project-links">
-                  <a
-                    href={project.liveUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Live Demo
-                  </a>
+                  {project.liveUrl && (
+                    <a
+                      href={project.liveUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Live Demo
+                    </a>
+                  )}
                   <a
                     href={project.githubUrl}
                     target="_blank"
