@@ -1,0 +1,142 @@
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  color: #fff;
+}
+
+h1 {
+  font-size: 48px;
+  font-weight: bold;
+  color: #ff4081;
+  text-align: center;
+  margin-bottom: 40px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.description {
+  font-size: 20px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.skills {
+  margin-top: 30px;
+}
+
+.skills h2 {
+  font-size: 32px;
+  color: #ff4081;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #ff4081;
+  padding-bottom: 10px;
+}
+
+.skills ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.skills li {
+  font-size: 18px;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.skills li ul {
+  list-style: none;
+  padding-left: 20px;
+}
+
+.skills li ul li {
+  font-size: 16px;
+  color: #aaa;
+  margin-bottom: 5px;
+}
+
+.skills li ul li::before {
+  content: "▹";
+  margin-right: 5px;
+  color: #ff4081;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-top: 20px;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px;
+}
+
+.description {
+  margin-bottom: 20px;
+}
+
+.skills {
+  margin-top: 30px;
+}
+
+#about ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+#about li {
+  margin-bottom: 10px;
+}
+
+#about h1,
+#about h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.icon {
+  margin-right: 10px;
+  vertical-align: middle;
+  margin-bottom: 5px;
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+
+  .description {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+
+  .skills h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  .skills li {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+
+  .skills li ul {
+    padding-left: 10px;
+  }
+
+  .skills li ul li {
+    font-size: 14px;
+    margin-bottom: 3px;
+  }
+
+  .icon {
+    margin-right: 5px;
+  }
+}
